@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a id="link" href="https://github.com/AlinaRsy/js-sredni">ссылка на гит</a>
+    
+    <div class="tabs">
+        <div class="tab__name active">
+            Angular
+        </div>
+        <div class="tab__name">
+            React
+        </div>
+        <div class="tab__name">
+            Vue
+        </div>
+        <div class="tab__name">
+            Ember
+        </div>
+    </div>
+    <div class="tab__text active">
+        AngularJS — это JavaScript-фреймворк с открытым исходным кодом, предназначенный для разработки одностраничных приложений.
+
+Его цель — расширение браузерных приложений на основе MVC-шаблона, а также упрощение тестирования и разработки. 
+    </div>
+    <div class="tab__text">
+        JavaScript-библиотека с открытым исходным кодом для разработки пользовательских интерфейсов.
+
+React разрабатывается и поддерживается Facebook, Instagram и сообществом отдельных разработчиков и корпораций.
+    </div>
+    <div class="tab__text">
+        JavaScript-фреймворк с открытым исходным кодом для создания пользовательских интерфейсов. Легко интегрируется в проекты с использованием других JavaScript-библиотек. Может функционировать как веб-фреймворк для разработки одностраничных приложений в реактивном стиле.
+    </div>
+    <div class="tab__text">
+        Свободный веб-фреймворк на JavaScript, реализующий шаблон MVC и нацеленный на упрощение создания масштабируемых одностраничных веб-приложений. Фактически является версией 2.0 фреймворка SproutCore.
+    </div>
+    <script>
+        let tabs = document.querySelectorAll('.tab__name');
+        let tabContent = document.querySelectorAll('.tab__text');
+        for(let i = 0; i<tabs.length; i++){
+            tabs[i].addEventListener('click', function(){
+                let currentActive = document.querySelector('.tabs>.active');
+                if(currentActive){
+                    currentActive.classList.remove('active');
+                }
+                tabs[i].classList.add('active');
+                for(let t = 0; t<tabContent.length; t++){
+                    if(i==t){
+                        tabContent[t].classList.add('active');
+                    }
+                    else{
+                        tabContent[t].classList.remove('active');
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>
