@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+}
+
+
+.container{
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 50px;
+    color: #232323;
+    font-weight: 700;
+}
+
+img{
+    max-height: 500px;
+}
+.block1, .block2, .block3, .block4, .block5{
+    height: 100vh;
+    padding: 30px;
+    background-color: rgb(242, 207, 255);
+}
+.block2 {
+    background-color:cornsilk;
+}
+.block3 {
+    background-color:aliceblue;
+}
+.block4 {
+    background-color:mintcream;
+}
+.block5 {
+    background-color: lightyellow;
+}
+.telephone{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.563);
+    color: white;
+    padding: 15px 30px;
+}
