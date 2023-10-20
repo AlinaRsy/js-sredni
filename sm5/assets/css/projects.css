@@ -1,0 +1,231 @@
+@import url('style.css');
+@import url('header-footer.css');
+
+.filter {
+    padding: 40px 0;
+}
+.filter__search {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    gap: 20px;
+    border-radius: 80px;
+    border: 1px solid var(--border);
+    background: transparent;
+    overflow: hidden;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+.filter__search input{
+    width: 100%;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black-text);
+}
+.filter__search input::placeholder{
+    color: var(--grey);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.filter__search .search__btn img{
+    width: 20px;
+    height: 20px;
+}
+.filter__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tabs__item {
+    cursor: pointer;
+    padding: 5px 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 1px solid #DED8E1;
+    background: #F8F5FB;
+    color: var(--purple);
+}
+.tabs__item.active {
+    border: 1px solid transparent;
+    background: #A713E7;
+    color: var(--pink-white);
+}
+
+@media(max-width:992px){
+    .filter__search {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:577px){
+    .filter__search {
+        gap: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .filter__search input::placeholder{
+        font-size: 15px;
+    }
+    .tabs__item{
+        font-size: 15px;
+    }
+}
+
+
+
+
+.posts {
+    margin-bottom: 50px;
+}
+.posts__inner {
+    gap: 20px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(310px,100%),1fr));
+}
+.card__img {
+    overflow: hidden;
+    border-radius: 8px;
+    height: 240px;
+    width: 100%;
+    position: relative;
+}
+.card__img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.card__name {
+    color: var(--pink-white);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-weight: 700;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(34, 4, 47, 0.55) 100%);
+    padding: 45px 5px 5px 10px;
+    z-index: 2;
+    transform: translateY(100%);
+    transition: .2s ease-in;
+}
+.posts__card:hover .card__name{
+    transform: translateY(0);
+}
+
+.card__info {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.author__photo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.author__photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.author__name {
+    color: #22042F;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 130%;
+}
+.card__stat {
+    display: flex;
+    gap: 10px;
+    font-family: 'Montserrat';
+    color: #8E8492;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 130%;
+}
+.card__likes {
+    display: flex;
+    align-items: center;  
+    gap: 4px;
+}
+.card__views {
+    display: flex;
+    align-items: center; 
+    gap: 4px;
+}
+
+.posts__btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.posts__btn a{
+    display: inline-block;
+    padding: 8px 22px;
+    border-radius: 20px;
+    background: #A713E7;
+    color: #FDFAFF;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+}
+.posts__btn a:hover{
+    background-color: #7400a5;
+}
+@media(max-width:577px){
+    .posts__btn{
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .posts__btn a{
+        font-size: 15px;
+    }
+}
+
+.popular__title{
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    color: #22042F;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.popular__title img{
+    max-height: 28px;
+}
+
+@media(max-width: 769px){
+    .popular__title{
+        padding: 40px 0;
+        font-size: 22px;
+    }
+    .popular__title img{
+        max-height: 24px;
+    }
+}
+@media(max-width: 500px){
+    .popular__title{
+        padding: 40px 0;
+        font-size: 20px;
+        flex-direction: column;
+    }
+    .popular__title img{
+        max-height: 20px;
+    }
+}
+
+.slider{
+    margin: 20px 10px 50px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <dialog id="dialog">
+        <div class="dialog__inner">
+            <h3 class="dialog__title">Добро пожаловать на WebCo! </h3>
+            <p class="dialog__text">Авторизуйтесь  для доступа к полному функционалу сайта!</p>
+            <p style="color:blueviolet; font-weight: 600;">потом чтоб окно это открыть нажмите на регистрацию пожалуйста</p>
+            <div id="dialogTimer" class="dialog__timer"></div>
+        </div>
+        
+    </dialog>
+    <header>
+        <div class="container">
+            <div class="header__inner">
+                <div id="burger" class="header__burger">
+                    <span></span> <span></span><span></span>                     
+                </div>
+                <div id="drop__down" class="drop-down__menu">
+                    <div id="close__burger" class="close__menu">
+                        <img src="assets/img/icons/close__burger.svg" alt="x">
+                    </div>
+                </div>
+                <a class="logo__tomain" href="index.html"><img src="assets/img/logo/webco_logo_white.svg" alt="WebCO" class="header__logo"></a>
+                <nav class="header__nav" id="header__navigation">
+                    <a href="projects.html" class="nav__elem active">Проекты</a>
+                    <a href="popular.html" class="nav__elem">Популярное</a>
+                    <a href="subscribtions.html" class="nav__elem">Подписки</a>
+                    <a href="index.html" class="nav__elem">О проекте</a>
+                    <div class="header__search">
+                        <button class="search__btn">
+                            <img src="assets/img/icons/search.svg" alt="ϙ">
+                        </button><input name="search" type="text" placeholder="Поиск..."> 
+                    </div>
+                </nav>
+                <div class="header__btns">
+                    <a href="#" id="darkTheme"><img src="assets/img/icons/darkTheme.svg" alt="#"></a>
+                    <a href="authorisation.html" class="signin__btn btn">Вход</a>
+                    <a href="#" class="signup__btn btn" style="display: none;">Регистрация</a>
+                </div>
+                <div class="header__mobile-btns">
+                    <img src="assets/img/icons/search-black-mobile.svg" alt="#">
+                    <img src="assets/img/icons/darkTheme.svg" alt="#">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <h1 class="banner__title"><img src="assets/img/logo/webco_logo_white_bg.svg" alt="WebCo"></h1>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <h2 class="about__title">
+                    ЧТО ТАКОЕ WEBCO
+                </h2>
+                <div id="animated__line" class="about__body">
+                    <div class="about__column active">
+                        <p class="about__elem">
+                            Свобода воображения 
+                        </p>
+                        <p class="about__elem">
+                            Обмен мнениями 
+                        </p>
+                    </div>
+                    <div class="about__column">
+                        <p class="about__elem">
+                            Способ заявить о себе
+                        </p>
+                        <p class="about__elem">
+                            Вдохновение
+                        </p>
+                    </div>
+                    <div class="about__column">
+                        <p class="about__elem">
+                            Поиск союзников
+                        </p>
+                        <p class="about__elem">
+                            Свежие идеи
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="popularity">
+        <div class="container">
+            <div class="popularity__inner">
+                <h2 class="popularity__title">КАК СТАТЬ ПОПУЛЯРНЫМ НА WEBCO</h2>
+                <div id="accordion" class="popularity__accordion">
+                    <div class="accordion__item">
+                        <p class="accordion__name">Делай качественно</p>
+                        <p class="accordion__text">
+                            Первый и самый важный пункт. Да, банально. Но как бы вы не старались раскрутить посредственную и не качественную работу – не получится. Можно набрать просмотры, лайки и даже комментарии при помощи мотивированных пользователей. Далеко на этом не уплывешь.
+                        </p>
+                    </div>
+                    <div class="accordion__item">
+                        <p class="accordion__name">Привлекательная обложка</p>
+                        <p class="accordion__text">
+                            Когда вы публикуете новый пост, он сразу попадает на главную страницу WebCo и имеет шансы выстрелить. Если его смотрит, лайкает и комментирует достаточное количество людей, он остаётся в топе. Чем ярче превью, тем больше шансов, что его заметят.
+                        </p>
+                    </div>
+                    <div class="accordion__item">
+                        <p class="accordion__name">Публикуй только лучшие работы</p>
+                        <p class="accordion__text">
+                            Дизайнеру хочется показать все грани своего таланта, и он выкладывает большое количество работ, но это ошибка. Показывайте только лучшие работы, со временем пересматривайте их и удаляйте устаревшие. Относитесь к себе критически, это полезно.
+                            Плохие работы тянут на дно — оставляйте только лучшие.
+                        </p>
+                    </div>
+                    <div class="accordion__item">
+                        <p class="accordion__name">Презентация</p>
+                        <p class="accordion__text">Один из самых важных пунктов. Важно уметь продать свою работу. Для этого надо поработать над презентацией. Просто сделать скриншот всей работы – недостаточно.
+                            Пользователи любят истории. Покажи процесс. Первые скетчи, поиски, как пришел к тому что есть.
+                            Если у тебя про UI\UX – анимации в помощь.</p>
+                    </div>
+                    <div class="accordion__item">
+                        <p class="accordion__name">Комментируй и лайкай чужие работы</p>
+                        <p class="accordion__text">
+                            Делайте как можно больше активности. Найдите понравившуюся работу. Ставьте лайк. Пишите комментарий:
+                            Great job, i like it!Check my work and give feedback.
+                            В ответ получаете лайки и комментарии.
+                            Отвечают не все. Чем больше будете лайкать и комментировать, тем больше отдача.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer__inner">
+                <a class="logo__tomain" href="index.html"><img src="assets/img/logo/webco_logo_dark.svg" alt="WebCO" class="footer__logo"></a>
+                <nav class="footer__nav" id="footer__navigation">
+                    <a href="projects.html" class="nav__elem active">Проекты</a>
+                    <a href="popular.html" class="nav__elem">Популярное</a>
+                    <a href="subscriptions.html" class="nav__elem">Подписки</a>
+                    <a href="index.html" class="nav__elem">О проекте</a>
+                </nav>
+                <div class="footer__btns">
+                    <a href="#" id="footer__darkTheme"><img src="assets/img/icons/darkTheme_white.svg" alt="#"></a>
+                </div>
+            </div>
+            <p class="footer__copyright">
+                ©WebCo 2023
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+</body>
+</html>

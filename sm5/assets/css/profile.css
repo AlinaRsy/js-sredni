@@ -1,0 +1,132 @@
+@import url('style.css');
+@import url('projects.css');
+@import url('header-footer.css');
+
+.header__profile{
+    background: url('../img/abstract/snapedit_1696399935026.png') 0 38%/ cover no-repeat;
+    padding-bottom: 150px;
+}
+.header__profile a{
+    color: var(--pink-white);
+}
+.header__profile .header__search{
+    border: 1px solid #DED8E1;
+    background: #e8d1ff5b;
+    background-blend-mode: overlay;
+}
+.header__profile .header__search input::placeholder {
+    color: var(--pink-white);
+}
+
+.header__profile .header__mobile-btns svg path{
+    stroke: #fff;
+}
+.header__profile #burger span{
+    background-color: #fff;
+}
+.header__profile .close__menu svg path{
+    fill: var(--pink-white);
+}
+
+
+
+
+.profile {
+    background: #F8F5FB;
+}
+.profile__inner {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.profile__about {
+    position: relative;
+    z-index: 3;
+    margin-top: -20px;
+    background: #FDFAFF;
+    border-radius: 8px;
+    border: 1px solid #DED8E1;
+    padding: 30px 20px 40px;
+    flex: 0 1 23.9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.profile__picture {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile__picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile__name {
+    font-size: 22px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.profile__about-elem{
+    align-self: flex-start;
+    line-height: normal;
+}
+.profile__about-elem h6{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.profile__btn {
+    font-weight: 600;
+    color: #FDFAFF;
+    background-color: var(--purple);
+    border-radius: 30px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.profile__body {
+    flex: 0 1 75%;
+    
+}
+.body {
+}
+.body__header {
+    padding: 50px 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.profile__tabs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.tabs {
+}
+.tabs__item {
+}
+.active {
+}
+.profile__add-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--purple);
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: 0.5px solid #DED8E1;
+    transition: .2s ease-in;
+}
+.profile__add-btn:hover svg path{
+    transform: rotateX(30deg);
+}
+.profile__content {
+}
+
+
+
+
+
